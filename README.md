@@ -275,10 +275,6 @@ server.port=8080
 
 ## 🤝 Contributing
 
----
-
-## 🤝 Contributing
-
 This is a personal project built end-to-end as a showcase of full-stack mobile development skills. However, feedback and suggestions are welcome!
 
 ---
