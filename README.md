@@ -98,64 +98,6 @@ Users can securely sign in with Google, upload outfit images, receive real-time 
 
 ---
 
-## 📊 Data Models
-
-### User
-
-```json
-{
-  "id": "string",
-  "name": "string",
-  "email": "string",
-  "profilePicture": "string",
-  "provider": "google",
-  "preferences": {
-    "style": "string",
-    "occasions": ["string"]
-  },
-  "createdAt": "date",
-  "updatedAt": "date"
-}
-```
-
-### ChatThread
-
-```json
-{
-  "id": "string",
-  "userId": "string",
-  "title": "string",
-  "context": {
-    "preferences": {},
-    "history": []
-  },
-  "createdAt": "date",
-  "updatedAt": "date"
-}
-```
-
-### Message
-
-```json
-{
-  "id": "string",
-  "threadId": "string",
-  "sender": "user | assistant",
-  "text": "string",
-  "imageUrl": "string",
-  "imageData": "base64",
-  "aiModel": "gemini | openai | dalle",
-  "status": "pending | streaming | sent | failed",
-  "metadata": {
-    "tokens": "number",
-    "model": "string"
-  },
-  "createdAt": "date"
-}
-```
-
----
-
 ## 🔄 Authentication Flow
 
 1. User taps **Sign in with Google**
@@ -172,91 +114,6 @@ Users can securely sign in with Google, upload outfit images, receive real-time 
 
 ---
 
-## 🌐 API Endpoints
-
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/auth/google` | Google authentication | ❌ |
-| POST | `/api/auth/refresh` | Refresh access token | ❌ |
-| GET | `/api/user/me` | Current user profile | ✅ |
-| DELETE | `/api/user/delete` | Delete user account | ✅ |
-| POST | `/api/chat/message` | Send message (streaming), Generate outfit image, Analyze outfit image | ✅ |
-| GET | `/api/chat/threads` | Get chat threads | ✅ |
-| GET | `/api/chat/messages/{threadId}` | Get thread messages | ✅ |
-| DELETE | `/api/chat/thread/{id}` | Delete thread | ✅ |
-| GET | `/api/chat/stream/{messageId}` | Stream AI response (SSE) | ✅ |
-
----
-
-## 📁 Project Structure
-
-```bash
-OccasionFit-AI/
-│
-├── react-frontend/
-│   ├── app/
-│   │   ├── (auth)/
-│   │   │   └── login.tsx
-│   │   ├── (tabs)/
-│   │   │   ├── chat.tsx
-│   │   │   ├── profile.tsx
-│   │   │   └── settings.tsx
-│   │   └── _layout.tsx
-│   ├── components/
-│   │   ├── ChatMessage.tsx
-│   │   ├── StreamingMessage.tsx
-│   │   ├── ImagePreview.tsx
-│   │   └── ThemeToggle.tsx
-│   ├── hooks/
-│   │   ├── useAuth.ts
-│   │   ├── useChat.ts
-│   │   └── useTheme.ts
-│   ├── store/
-│   │   ├── authSlice.ts
-│   │   ├── chatSlice.ts
-│   │   └── store.ts
-│   ├── theme/
-│   │   └── colors.ts
-│   ├── utils/
-│   │   ├── api.ts
-│   │   └── storage.ts
-│   └── assets/
-│
-└── java-backend/
-    ├── controller/
-    │   ├── AuthController.java
-    │   ├── ChatController.java
-    │   └── UserController.java
-    ├── service/
-    │   ├── AuthService.java
-    │   ├── ChatService.java
-    │   ├── AIService.java
-    │   └── ImageService.java
-    ├── repository/
-    │   ├── UserRepository.java
-    │   ├── ThreadRepository.java
-    │   └── MessageRepository.java
-    ├── model/
-    │   ├── User.java
-    │   ├── ChatThread.java
-    │   └── Message.java
-    ├── dto/
-    │   ├── ChatRequest.java
-    │   ├── ChatResponse.java
-    │   └── AuthResponse.java
-    ├── config/
-    │   ├── SecurityConfig.java
-    │   ├── MongoConfig.java
-    │   └── AIConfig.java
-    ├── security/
-    │   ├── JwtFilter.java
-    │   └── JwtUtil.java
-    └── util/
-        └── VirtualThreadExecutor.java
-```
-
----
-
 ## 🚀 Installation & Setup
 
 ### Prerequisites
@@ -266,7 +123,7 @@ OccasionFit-AI/
 - Google OAuth credentials
 - Gemini API key
 - OpenAI API key
-- Docker (optional)
+- Docker (Backend)
 
 ### Frontend Setup
 
@@ -406,6 +263,11 @@ server.port=8080
 - [ ] Shopping links integration
 - [ ] Outfit calendar planning
 - [ ] Push notifications
+
+- [ ] ## Agentic Architecture (In Progress)
+- AI autonomously selects and chains tools based on user goal
+- Gemini Function Calling for multi-step reasoning
+- Planned tools: wardrobe fetch, image analysis, weather, gap detection
 
 ---
 
