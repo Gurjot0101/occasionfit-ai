@@ -151,8 +151,6 @@ eas build --platform ios
 ```bash
 cd java-backend
 
-# Configure application.properties
-cp src/main/resources/application.properties.example src/main/resources/application.properties
 # Add MongoDB URI, JWT secret, API keys
 
 # Run with Maven
@@ -170,33 +168,30 @@ docker run -p 8080:8080 occasionfit-backend
 ### Frontend (`.env`)
 
 ```env
-EXPO_PUBLIC_API_URL=https://your-backend-url.com
-EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID=your-google-client-id
+EXPO_PUBLIC_API_URL=
+EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID=
 ```
 
 ### Backend (`application.properties`)
 
 ```properties
 # MongoDB
-spring.data.mongodb.uri=mongodb+srv://username:password@cluster.mongodb.net/occasionfit
+spring.data.mongodb.uri=
 
 # JWT
-jwt.secret=your-super-secret-jwt-key
-jwt.expiration=3600000
-jwt.refresh.expiration=604800000
+jwt.secret=
+jwt.expiration=
+jwt.refresh.expiration=
 
 # Google OAuth
-google.web.client.id=your-google-web-client-id
+google.web.client.id=
 
 # AI APIs
-gemini.api.key=your-gemini-api-key
-openai.api.key=your-openai-api-key
+gemini.api.key=
+openai.api.key=
 
 # Virtual Threads
 spring.threads.virtual.enabled=true
-
-# Server
-server.port=8080
 ```
 
 ---
