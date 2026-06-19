@@ -169,6 +169,24 @@ this.toolRegistry = tools.stream()
 
 ---
 
+## 📱 Frontend
+
+The mobile app is built with React Native + Expo Router, with Redux Toolkit
+managing auth and chat state. Key implementation pieces:
+
+- **Multi-image flows** — `images[]` array support across upload, compare,
+  and analyze paths
+- **Performance** — inverted `FlatList` with memoized, custom-comparator
+  message rendering to avoid re-renders on streaming updates
+- **Auth** — Google Sign-In → JWT, tokens in device Keychain, automatic
+  refresh via Axios interceptors
+
+**Frontend source is private.** Full architecture breakdown available here →
+[`frontend/README.md`](./frontend/README.md), or reach out on
+[LinkedIn](https://linkedin.com/in/gurjot0101) for a walkthrough.
+
+---
+
 ## 🏗️ Project Structure
 
 ```
