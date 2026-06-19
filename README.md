@@ -1,8 +1,9 @@
 <div align="center">
 
 <p align="center">
-  <img src="assets/owicon.png" alt="" width="90">
+  <img src="assets/owicon.png" alt="" width="100">
 </p>
+
 # OccasionFit AI
 
 ### *Staring at your wardrobe for 20 minutes? Friends can't agree on what suits you?*
@@ -19,7 +20,7 @@
 
 ![OccasionFit Demo](docs/demo.gif)
 
-[Features](#-features) · [Arch Diagram](#arch-diagram) · [Architecture](#-agentic-architecture) · [Tech Stack](#tech-stack) · [Roadmap](#roadmap)
+[Features](#-features) · [Architecture Diagram](#arch-diagram) · [Architecture](#-agentic-architecture) · [Tech Stack](#tech-stack) · [Roadmap](#roadmap)
 
 </div>
 
