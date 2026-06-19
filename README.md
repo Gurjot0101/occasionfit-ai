@@ -12,7 +12,7 @@
 [![React Native](https://img.shields.io/badge/React_Native-Expo-blue?logo=react)](https://expo.dev)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green?logo=mongodb)](https://www.mongodb.com/atlas)
 [![GCP](https://img.shields.io/badge/GCP-Cloud_Run-blue?logo=googlecloud)](https://cloud.google.com/run)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![License](https://img.shields.io/badge/License-Proprietary-red)](#-license)
 
 ![OccasionFit Demo](docs/demo.gif)
 
@@ -271,4 +271,8 @@ AWS Certified Developer · Claude Certified Architect
 
 ## 📄 License
 
-MIT License © 2026 Gurjot Singh
+© 2026 Gurjot Singh. All rights reserved.
+
+This repository is shared publicly for portfolio and demonstration purposes
+only. No license is granted to copy, modify, distribute, or use this code,
+in whole or in part, without explicit written permission from the author.
