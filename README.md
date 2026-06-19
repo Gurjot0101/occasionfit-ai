@@ -1,5 +1,6 @@
 <div align="center">
 
+![OccasionFit AI Architecture](assets/owicon.png)
 # OccasionFit AI
 
 ### *Staring at your wardrobe for 20 minutes? Friends can't agree on what suits you?*
@@ -16,7 +17,7 @@
 
 ![OccasionFit Demo](docs/demo.gif)
 
-[Features](#-features) · [Architecture](#-agentic-architecture) · [Tech Stack](#tech-stack) · [Roadmap](#roadmap)
+[Features](#-features) · [Arch Diagram](#arch-diagram) · [Architecture](#-agentic-architecture) · [Tech Stack](#tech-stack) · [Roadmap](#roadmap)
 
 </div>
 
@@ -70,6 +71,18 @@ or drop a message on [LinkedIn](https://linkedin.com/in/gurjot0101).
 - Light / Dark theme
 - Animated RGB gradient borders and text
 - Inverted FlatList chat with keyboard-aware input
+
+---
+
+<a id="arch-diagram"></a>
+## Architecture Diagram
+
+<p align="center">
+  <a href="assets/architecture.png">
+    <img src="assets/architecture.jpg" alt="OccasionFit AI Architecture" width="900">
+  </a>
+</p>
+<p align="center"><i>Click to view full resolution</i></p>
 
 ---
 
