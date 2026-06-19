@@ -81,7 +81,7 @@ or drop a message on [LinkedIn](https://linkedin.com/in/gurjot0101).
 ## Architecture Diagram
 
 <p align="center">
-  <a href="assets/architecture.png">
+  <a href="assets/architecture.jpg">
     <img src="assets/architecture.jpg" alt="OccasionFit AI Architecture" width="900">
   </a>
 </p>
