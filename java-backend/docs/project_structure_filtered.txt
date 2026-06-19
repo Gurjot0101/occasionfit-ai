@@ -1,0 +1,115 @@
+--- Folder Structure ---
+.gitattributes
+.gitignore
+[.mvn]
+    └── [wrapper]
+        └── maven-wrapper.properties
+DockerFile
+[docs]
+    └── project_structure_filtered.txt
+mvnw
+mvnw.cmd
+pom.xml
+[src]
+    ├── [main]
+        ├── [java]
+            └── [com]
+                └── [occasionfit]
+                    └── [backend]
+                        ├── [agent]
+                            ├── AgentAction.java
+                            ├── AgentContext.java
+                            ├── AgentOrchestrator.java
+                            ├── AgentPlan.java
+                            ├── AgentResult.java
+                            └── [tools]
+                                ├── AgentTool.java
+                                ├── [impl]
+                                    ├── AnalyzeOutfitImageTool.java
+                                    ├── CompareOutfitImagesTool.java
+                                    ├── DirectReplyTool.java
+                                    ├── GenerateOutfitImageTool.java
+                                    └── GenerateTextResponseTool.java
+                                ├── ToolExecutionResult.java
+                                └── ToolExecutor.java
+                        ├── [ai]
+                            ├── [client]
+                                ├── GeminiClient.java
+                                └── OpenAiClient.java
+                            ├── PlannerService.java
+                            └── [prompt]
+                                ├── PromptBuilder.java
+                                ├── PromptCleaner.java
+                                └── PromptTemplate.java
+                        ├── [config]
+                            ├── AppConfig.java
+                            └── MongoConfig.java
+                        ├── [controller]
+                            ├── AuthController.java
+                            ├── FeedbackController.java
+                            ├── MessageController.java
+                            └── UserController.java
+                        ├── [dto]
+                            ├── [req]
+                                ├── FeedbackRequest.java
+                                └── MessageRequest.java
+                            └── [res]
+                                ├── ApiErrorResponse.java
+                                ├── MessageResponse.java
+                                └── UserResponse.java
+                        ├── [exception]
+                            ├── GlobalExceptionHandler.java
+                            └── TokenLimitExceededException.java
+                        ├── [model]
+                            ├── ChatThread.java
+                            ├── [enums]
+                                └── Sender.java
+                            ├── Feedback.java
+                            ├── Message.java
+                            └── User.java
+                        ├── OccasionfitBackendApplication.java
+                        ├── [repository]
+                            ├── ChatThreadRepository.java
+                            ├── ChatThreadRepositoryCustom.java
+                            ├── FeedbackRepository.java
+                            ├── [impl]
+                                └── ChatThreadRepositoryImpl.java
+                            ├── MessageRepository.java
+                            └── UserRepository.java
+                        ├── [scheduler]
+                            └── CleanupScheduler.java
+                        ├── [security]
+                            ├── JwtAuthenticationFilter.java
+                            ├── JwtService.java
+                            └── SecurityConfig.java
+                        ├── [service]
+                            ├── AuthService.java
+                            ├── ChatService.java
+                            ├── ChatThreadService.java
+                            ├── ContextService.java
+                            ├── FeedbackService.java
+                            ├── [impl]
+                                ├── AuthServiceImpl.java
+                                ├── ChatServiceImpl.java
+                                ├── ChatThreadServiceImpl.java
+                                ├── ContextServiceImpl.java
+                                ├── FeedbackServiceImpl.java
+                                ├── MessageServiceImpl.java
+                                └── UserServiceImpl.java
+                            ├── MessageService.java
+                            └── UserService.java
+                        └── [util]
+                            └── TokenEstimator.java
+        └── [resources]
+            ├── application-dev.properties
+            ├── application-local.properties
+            ├── application.properties
+            └── [static]
+    └── [test]
+        └── [java]
+            └── [com]
+                └── [occasionfit]
+                    └── [backend]
+                        └── OccasionfitBackendApplicationTests.java
+
+--- File Contents ---
