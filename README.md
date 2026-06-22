@@ -199,7 +199,7 @@ managing auth and chat state. Key implementation pieces:
   refresh via Axios interceptors
 
 **Frontend source is private.** Full architecture breakdown available here →
-[`frontend/README.md`](./frontend/README.md), or reach out on
+[`frontend/README.md`](./react-native-expo-frontend/README.md), or reach out on
 [LinkedIn](https://linkedin.com/in/gurjot0101) for a walkthrough.
 
 ---
