@@ -18,17 +18,24 @@
 [![GCP](https://img.shields.io/badge/GCP-Cloud_Run-blue?logo=googlecloud)](https://cloud.google.com/run)
 [![License](https://img.shields.io/badge/License-Proprietary-red)](#-license)
 
-<p align="center">
-  <img src="assets/demo1.gif" alt="Outfit Recommendation Demo" width="700">
-</p>
-<p align="center">
-  <img src="assets/demo2.gif" alt="Outfit Recommendation Demo2" width="700">
-</p>
-<p align="center">
-  <img src="assets/darklightmode.gif" alt="Dark/Light Mode" width="700">
-</p>
-
 [Features](#-features) · [Architecture Diagram](#arch-diagram) · [Architecture](#-agentic-architecture) · [Tech Stack](#tech-stack) · [Roadmap](#roadmap)
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/demo1.gif" width="200"><br>
+      <sub><b>Outfit Recommendation</b></sub>
+    </td>
+    <td align="center">
+      <img src="assets/demo2.gif" width="200"><br>
+      <sub><b>Outfit Recommendation Demo2</b></sub>
+    </td>
+    <td align="center">
+      <img src="assets/darklightmode.gif" width="200"><br>
+      <sub><b>Dark / Light Mode</b></sub>
+    </td>
+  </tr>
+</table>
 
 </div>
 
