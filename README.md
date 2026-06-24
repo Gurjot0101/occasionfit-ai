@@ -18,9 +18,15 @@
 [![GCP](https://img.shields.io/badge/GCP-Cloud_Run-blue?logo=googlecloud)](https://cloud.google.com/run)
 [![License](https://img.shields.io/badge/License-Proprietary-red)](#-license)
 
-![Dark/Light Mode](assets/darklightmode.gif)
-![OccasionFit Demo](assets/demo1.gif)
-![Demo 2](assets/demo2.gif)
+<p align="center">
+  <img src="assets/demo1.gif" alt="Outfit Recommendation Demo" width="700">
+</p>
+<p align="center">
+  <img src="assets/demo2.gif" alt="Outfit Recommendation Demo2" width="700">
+</p>
+<p align="center">
+  <img src="assets/darklightmode.gif" alt="Dark/Light Mode" width="700">
+</p>
 
 [Features](#-features) · [Architecture Diagram](#arch-diagram) · [Architecture](#-agentic-architecture) · [Tech Stack](#tech-stack) · [Roadmap](#roadmap)
 
